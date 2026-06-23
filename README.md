@@ -10,7 +10,7 @@
 
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white">
-  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-core-EE4C2C?logo=pytorch&logoColor=white">
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?logo=pytorch&logoColor=white">
   <img alt="Input" src="https://img.shields.io/badge/Input-NPZ%20%7C%20HDF5%20%7C%20Video%20%7C%20Frames-0f766e">
   <img alt="Output" src="https://img.shields.io/badge/Output-NPZ%20%7C%20HDF5-245c9f">
 </p>

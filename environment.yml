@@ -6,7 +6,7 @@ dependencies:
   - pip
   - pip:
       - numpy
-      - torch
+      - torch>=2.0
       - h5py
       - pyyaml
       - pillow
