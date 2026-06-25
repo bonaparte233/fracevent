@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,8 @@
   <meta property="og:title" content="FracEvent">
   <meta property="og:description" content="Event-camera simulation via fractional-relaxation pixel dynamics.">
   <meta property="og:image" content="assets/overview.png">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2306110f'/%3E%3Cpath d='M18 46V16h29v7H27v7h17v7H27v9z' fill='%23ff7348'/%3E%3C/svg%3E">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2306110f'/%3E%3Cpath d='M18 46V16h29v7H27v7h17v7H27v9z' fill='%23ff7348'/%3E%3C/svg%3E">
   <title>FracEvent</title>
   <style>
     :root {
@@ -26,8 +28,14 @@
       --radius: 8px;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       color: var(--ink);
@@ -41,14 +49,19 @@
       text-decoration: none;
     }
 
-    a:hover { text-decoration: underline; }
+    a:hover {
+      text-decoration: underline;
+    }
+
     a:focus-visible,
     button:focus-visible {
       outline: 3px solid rgba(8, 124, 120, 0.35);
       outline-offset: 3px;
     }
 
-    img { max-width: 100%; }
+    img {
+      max-width: 100%;
+    }
 
     .nav {
       position: sticky;
@@ -321,8 +334,13 @@
       font-size: 17px;
     }
 
-    .body-copy p { margin: 0 0 16px; }
-    .body-copy p:last-child { margin-bottom: 0; }
+    .body-copy p {
+      margin: 0 0 16px;
+    }
+
+    .body-copy p:last-child {
+      margin-bottom: 0;
+    }
 
     .card-grid {
       display: grid;
@@ -404,7 +422,7 @@
       font-size: 14px;
     }
 
-    .result-subsection + .result-subsection {
+    .result-subsection+.result-subsection {
       margin-top: 30px;
     }
 
@@ -441,8 +459,13 @@
       box-shadow: 0 10px 26px rgba(16, 24, 23, 0.06);
     }
 
-    .metric:nth-child(2) { border-left-color: var(--orange); }
-    .metric:nth-child(3) { border-left-color: var(--blue); }
+    .metric:nth-child(2) {
+      border-left-color: var(--orange);
+    }
+
+    .metric:nth-child(3) {
+      border-left-color: var(--blue);
+    }
 
     .metric b {
       display: block;
@@ -619,8 +642,16 @@
         padding: 9px 12px;
       }
 
-      .hero-figure { width: min(100% - 28px, 1180px); margin-top: 18px; }
-      .section-inner { width: min(100% - 28px, 1180px); padding: 48px 0; }
+      .hero-figure {
+        width: min(100% - 28px, 1180px);
+        margin-top: 18px;
+      }
+
+      .section-inner {
+        width: min(100% - 28px, 1180px);
+        padding: 48px 0;
+      }
+
       .section-head {
         grid-template-columns: 1fr;
       }
@@ -643,10 +674,13 @@
         background: var(--paper) url("assets/event_accumulation_poster.png") center / cover no-repeat;
       }
 
-      .hero-video { display: none; }
+      .hero-video {
+        display: none;
+      }
     }
   </style>
 </head>
+
 <body>
   <nav class="nav" aria-label="Main navigation">
     <div class="nav-inner">
@@ -663,42 +697,52 @@
 
   <main>
     <header class="hero">
-      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/event_accumulation_poster.png" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto"
+        poster="assets/event_accumulation_poster.png" aria-hidden="true">
         <source src="assets/event_accumulation.mp4" type="video/mp4">
       </video>
       <div class="hero-content">
         <div class="kicker">Event-camera simulation</div>
         <h1>FracEvent: Event-Camera Simulation via Fractional-Relaxation Pixel Dynamics</h1>
         <p class="subtitle">
-          An event camera simulator that keeps pixel-level voltage memory and localizes ON/OFF threshold crossings inside frame intervals.
+          An event camera simulator that keeps pixel-level voltage memory and localizes ON/OFF threshold crossings
+          inside frame intervals.
         </p>
         <p class="authors">
-          <span>Langyi Chen<sup>1</sup>, Chuanzhi Xu<sup>1</sup>, Haoxian Zhou<sup>1</sup>, Pengfei Ye<sup>2</sup>, Ziyu Luo<sup>3</sup>,</span>
-          <span>Haodong Chen<sup>1</sup>, Qiang Qu<sup>1</sup>, Xiaoming Chen<sup>3</sup>, Weidong Cai<sup>1</sup></span>
+          <span>Langyi Chen<sup>1</sup>, Chuanzhi Xu<sup>1</sup>, Haoxian Zhou<sup>1</sup>, Pengfei Ye<sup>2</sup>, Ziyu
+            Luo<sup>3</sup>,</span>
+          <span>Haodong Chen<sup>1</sup>, Qiang Qu<sup>1</sup>, Xiaoming Chen<sup>3</sup>, Weidong
+            Cai<sup>1</sup></span>
         </p>
         <p class="affiliations">
-          <sup>1</sup>The University of Sydney · <sup>2</sup>Massachusetts Institute of Technology · <sup>3</sup>Beijing Technology and Business University
+          <sup>1</sup>The University of Sydney · <sup>2</sup>Massachusetts Institute of Technology · <sup>3</sup>Beijing
+          Technology and Business University
         </p>
         <div class="actions">
-          <a class="button code-button" href="https://github.com/bonaparte233/fracevent" target="_blank" rel="noopener noreferrer" aria-label="Code on GitHub">
+          <a class="button code-button" href="https://github.com/bonaparte233/fracevent" target="_blank"
+            rel="noopener noreferrer" aria-label="Code on GitHub">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path fill="currentColor" d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 7c.85 0 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.83 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z"/>
+              <path fill="currentColor"
+                d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 7c.85 0 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.83 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z" />
             </svg>
             Code
           </a>
           <a class="button paper-button" href="assets/fracevent.pdf" download>
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6M9 8h2"/>
+              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6M9 8h2" />
             </svg>
             Paper
           </a>
-          <a class="button arxiv-button" href="https://arxiv.org/abs/0000.00000" target="_blank" rel="noopener noreferrer" aria-label="arXiv">
+          <a class="button arxiv-button" href="https://arxiv.org/abs/0000.00000" target="_blank"
+            rel="noopener noreferrer" aria-label="arXiv">
             <img class="arxiv-logomark" src="assets/arxiv-logomark-small.png" alt="" aria-hidden="true">
             arXiv
           </a>
           <a class="button bib-button" href="#citation">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path fill="currentColor" d="M9.4 7H5.9C4.8 8.7 4.2 10.6 4.2 12.8V17h5.1v-5H6.8c.1-1.3.6-2.6 1.5-3.9L9.4 7Zm10 0h-3.5c-1.1 1.7-1.7 3.6-1.7 5.8V17h5.1v-5h-2.5c.1-1.3.6-2.6 1.5-3.9L19.4 7Z"/>
+              <path fill="currentColor"
+                d="M9.4 7H5.9C4.8 8.7 4.2 10.6 4.2 12.8V17h5.1v-5H6.8c.1-1.3.6-2.6 1.5-3.9L9.4 7Zm10 0h-3.5c-1.1 1.7-1.7 3.6-1.7 5.8V17h5.1v-5h-2.5c.1-1.3.6-2.6 1.5-3.9L19.4 7Z" />
             </svg>
             Bib
           </a>
@@ -708,7 +752,8 @@
     <figure class="hero-figure">
       <img src="assets/overview.png" alt="Overview of the FracEvent simulator and evaluation workflow">
       <figcaption class="caption">
-        FracEvent converts APS frames into simulated event streams through fractional voltage memory, continuous-time crossing localization, and retained-memory reference updates.
+        FracEvent converts APS frames into simulated event streams through fractional voltage memory, continuous-time
+        crossing localization, and retained-memory reference updates.
       </figcaption>
     </figure>
 
@@ -722,13 +767,19 @@
         </div>
         <div class="body-copy">
           <p>
-            Event cameras asynchronously report brightness changes with microsecond-level temporal resolution, but real event data remain difficult to collect at scale because specialized sensors, careful synchronization, and task-specific annotations are required.
+            Event cameras asynchronously report brightness changes with microsecond-level temporal resolution, but real
+            event data remain difficult to collect at scale because specialized sensors, careful synchronization, and
+            task-specific annotations are required.
           </p>
           <p>
-            FracEvent models this pixel-level lifecycle with fractional-relaxation voltage dynamics. Given a log-intensity trajectory, it drives a compact stack of relaxation modes, combines their responses into a voltage state, emits ON/OFF events by localizing threshold crossings on the continuous voltage trajectory, and updates the reference while retaining the underlying memory modes.
+            FracEvent models this pixel-level lifecycle with fractional-relaxation voltage dynamics. Given a
+            log-intensity trajectory, it drives a compact stack of relaxation modes, combines their responses into a
+            voltage state, emits ON/OFF events by localizing threshold crossings on the continuous voltage trajectory,
+            and updates the reference while retaining the underlying memory modes.
           </p>
           <p>
-            The retained state links residual voltage response to later event timing. We evaluate FracEvent through direct event-stream comparison and downstream transfer on image reconstruction and optical flow estimation.
+            The retained state links residual voltage response to later event timing. We evaluate FracEvent through
+            direct event-stream comparison and downstream transfer on image reconstruction and optical flow estimation.
           </p>
         </div>
       </div>
@@ -745,15 +796,18 @@
         <div class="card-grid">
           <div class="card">
             <strong>Pixel event lifecycle</strong>
-            <p>Each pixel keeps a finite stack of relaxation modes instead of treating frame differences as isolated contrast increments.</p>
+            <p>Each pixel keeps a finite stack of relaxation modes instead of treating frame differences as isolated
+              contrast increments.</p>
           </div>
           <div class="card">
             <strong>Sub-frame timing</strong>
-            <p>Events are localized on the voltage trajectory inside each frame interval, avoiding frame-boundary-only emission.</p>
+            <p>Events are localized on the voltage trajectory inside each frame interval, avoiding frame-boundary-only
+              emission.</p>
           </div>
           <div class="card">
             <strong>Residual memory</strong>
-            <p>Event references update after threshold crossings, while the relaxation modes are carried into the next interval.</p>
+            <p>Event references update after threshold crossings, while the relaxation modes are carried into the next
+              interval.</p>
           </div>
         </div>
 
@@ -801,16 +855,19 @@
           <h3 class="subsection-title">Visualization</h3>
           <div class="video-grid">
             <figure class="result-image">
-              <video class="event-video" autoplay muted loop playsinline preload="metadata" poster="assets/result_davis240c_events_poster.png" aria-label="Accumulated FracEvent event frames on DAVIS240C">
+              <video class="event-video" autoplay muted loop playsinline preload="metadata"
+                poster="assets/result_davis240c_events_poster.png"
+                aria-label="Accumulated FracEvent events on DAVIS240C">
                 <source src="assets/result_davis240c_events.mp4" type="video/mp4">
               </video>
-              <figcaption class="caption">Accumulated FracEvent event frames on DAVIS240C.</figcaption>
+              <figcaption class="caption">Accumulated FracEvent events on DAVIS240C dataset.</figcaption>
             </figure>
             <figure class="result-image">
-              <video class="event-video" autoplay muted loop playsinline preload="metadata" poster="assets/result_mvsec_events_poster.png" aria-label="Accumulated FracEvent event frames on MVSEC">
+              <video class="event-video" autoplay muted loop playsinline preload="metadata"
+                poster="assets/result_mvsec_events_poster.png" aria-label="Accumulated FracEvent events on MVSEC">
                 <source src="assets/result_mvsec_events.mp4" type="video/mp4">
               </video>
-              <figcaption class="caption">Accumulated FracEvent event frames on MVSEC.</figcaption>
+              <figcaption class="caption">Accumulated FracEvent events on MVSEC dataset.</figcaption>
             </figure>
           </div>
           <div class="figure-pair">
@@ -829,15 +886,18 @@
           <div class="metric-stack">
             <div class="metric">
               <b>Event-stream comparison</b>
-              <p>On matched DAVIS240C windows, FracEvent achieves the lowest IEI distance and polarity error among the compared simulators.</p>
+              <p>On matched DAVIS240C windows, FracEvent achieves the lowest IEI distance and polarity error among the
+                compared simulators.</p>
             </div>
             <div class="metric">
               <b>Image reconstruction</b>
-              <p>With the fixed E2VID-style training protocol, FracEvent gives the lowest DAVIS240C MSE (0.030) and LPIPS (0.460); ESIM has the highest DAVIS240C SSIM.</p>
+              <p>With the fixed E2VID-style training protocol, FracEvent gives the lowest DAVIS240C MSE (0.030) and
+                LPIPS (0.460); ESIM has the highest DAVIS240C SSIM.</p>
             </div>
             <div class="metric">
               <b>Optical flow</b>
-              <p>For EV-FlowNet-style training, FracEvent reaches 2.68 mean AEE, the lowest among simulated training sources and closest to training with real MVSEC events at 2.42.</p>
+              <p>For EV-FlowNet-style training, FracEvent reaches 2.68 mean AEE, the lowest among simulated training
+                sources and closest to training with real MVSEC events at 2.42.</p>
             </div>
           </div>
         </div>
@@ -855,7 +915,8 @@
         <div class="citation">
           <button class="copy-citation" type="button" data-copy-target="citation-bibtex" aria-label="Copy BibTeX">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M8 8h11v13H8zM5 16H4V3h12v1"/>
+              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"
+                d="M8 8h11v13H8zM5 16H4V3h12v1" />
             </svg>
             <span>Copy</span>
           </button>
@@ -916,4 +977,5 @@
     })();
   </script>
 </body>
+
 </html>
